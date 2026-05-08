@@ -9,6 +9,7 @@ h2,
 h3,
 .menu-btn,
 .second-menu-btn,
+#logout,
 button {
   font-family: "Poppins", sans-serif;
 }
@@ -184,4 +185,147 @@ main {
   left: -20%;
   height: 2px;
   background-color: #0d75dd;
+}
+
+
+#left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.profile-card {
+  background: #ffffff;
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card-profile-photo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-title,
+.profile-location {
+  font-size: 14px;
+  color: #5f5e5e;
+  margin-bottom: 4px;
+}
+
+.profile-btn {
+  display: inline-block;
+  margin: 6px 4px 0;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  border: 1px solid #dbd9d9;
+  background: #e8e8e8;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #3c3b3b;
+}
+
+.profile-btn:hover {
+  background-color: #d3d1d1;
+}
+
+
+.profile-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  padding: 12px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-stat {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #0d75dd;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.profile-link i {
+  font-size: 14px;
+  color: #0d75dd;
+}
+
+.profile-link:hover {
+  color: #064e96;
+  
+}
+
+#export-btn {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  border: 1px solid #dbd9d9;
+  background: #e8e8e8;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease-in-out;
+  color: #3c3b3b;
+}
+
+#export-btn:hover {
+  background-color: #d3d1d1;
 }
