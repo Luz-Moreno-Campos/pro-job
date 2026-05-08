@@ -1,5 +1,3 @@
-
-
 body {
   font-family: "Inter", sans-serif;
   background-color: #f3f2ef;
@@ -19,7 +17,8 @@ main {
   max-width: 1200px;
   margin: 20px;
   display: grid;
-  grid-template-columns: 250px 1fr 250px; /* fixed side columns and flexible central-content column */
+  grid-template-columns: 250px 1fr 250px;
+  /* fixed side columns and flexible central-content column */
   gap: 20px;
 }
 
@@ -71,9 +70,17 @@ main {
   padding: 6px 10px;
   font-size: 14px;
   font-weight: 500;
-  color: #444;
+  color: #5f5e5e;
   cursor: pointer;
+  transition: 0.3s ease-in-out
 }
+
+.menu-btn:hover {
+  color: #0c0c0c;
+  ;
+  
+}
+
 
 .icons-menu {
   display: flex;
@@ -88,6 +95,39 @@ main {
   font-size: 16px;
   color: #4491ef;
 }
+
+.header-icon:hover {
+  color: #0769e1;
+  font-weight: 600;
+  position: relative;
+}
+
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 12px;
+}
+
+
+#logout {
+  padding: 5px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: inherit;
+  background-color: #e8e8e8;
+  border: 1px solid #dbd9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color:#3c3b3b
+}
+
+#logout:hover {
+  background-color: #d3d1d1;
+}
+
 
 .profile-photo {
   width: 32px;
@@ -109,26 +149,39 @@ main {
 
 .header-bottom {
   padding-left: 25px;
- 
+
 }
 
 .second-menu {
   display: flex;
   gap: 25px;
-  padding: 6px 0 4px;
+  padding: 6px 4px;
 }
 
 .second-menu-btn {
   border: none;
   background: transparent;
-  padding: 4px 0;
+  padding: 4px 0 0px;
   font-size: 14px;
   font-weight: 500;
-  color: #555;
+  color: #a2a1a1;
   cursor: pointer;
 }
 
+#post-btn {
+  color: #444;
+  font-weight: 600;
+  position: relative;
 
+}
 
-
-
+#post-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 140%;
+  left: -20%;
+  height: 2px;
+  background-color: #0d75dd;
+}
