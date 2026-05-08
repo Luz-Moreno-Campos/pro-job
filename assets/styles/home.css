@@ -477,3 +477,42 @@ main {
   font-size: 12px;
   color: #777;
 }
+
+
+
+
+
+footer {
+  background: #ffffff;
+  border-top: 1px solid #dbd9d9;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-name {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color:  #114f8d;
+  
+}
+
+.footer-slogan {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
