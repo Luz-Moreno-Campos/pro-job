@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import "./reset.css";
+
+:root {
+    /* --primary-font: "Roboto", roboto; */
+    /* --secondary-font: "Lexend Deca", sans-serif; */
+    --blue: #2563eb;
+    --blue-dark: #1d4ed8;
+    --blue-bg: #3b82f6;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --error: #ef4444;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue-bg);
+    position: relative;
+}
