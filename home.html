@@ -39,7 +39,7 @@
         </nav>
         <nav class="icons-menu">
           <button class="header-icon" type="button">
-            <span class="nav-icon">
+            <span class="icon">
               <i class="fa-solid fa-message"></i>
             </span>
           </button>
@@ -68,7 +68,43 @@
       </div>
     </header>
     <main>
-
+      <div class="column" id="left-column">
+        <section class="profile-card">
+          <div class="profile-header">
+            <div class="card-profile-photo">
+              <img id="card-photo" src="./assets/media/peter-sorokin-photo.jpg" alt="Profile photo">
+            </div>
+            <h1 class="profile-name" id="username">Peter Sorokin</h1>
+            <p class="profile-title" id="user-title">Software Developer</p>
+            <p class="profile-location" id="user-location">New York City, USA</p>
+            <button class="profile-btn">Follow</button>
+            <button class="profile-btn">Connect</button>
+          </div>
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <span class="stat-label">Connections</span>
+              <span class="stat-value" id="user-connections">200</span>
+            </div>
+            <div class="profile-stat">
+              <span class="stat-label">Followers</span>
+              <span class="stat-value" id="user-followers">1.9M</span>
+            </div>
+          </div>
+          <div class="profile-links">
+            <a href="#" class="profile-link" id="user-linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+              linkedin.com/peter-sorokin
+            </a>
+            <a href="#" class="profile-link" id="user-website">
+              <i class="fa-solid fa-globe"></i>
+              www.peter-sorokin.com
+            </a>
+          </div>
+          <button id="export-btn">
+            <i class="fa-solid fa-file-pdf"></i>
+            Export page as PDF
+          </button>
+      </div>
     </main>
   </body>
 </html>
