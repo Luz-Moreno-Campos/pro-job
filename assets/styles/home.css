@@ -117,7 +117,6 @@ main {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  font-family: inherit;
   background-color: #e8e8e8;
   border: 1px solid #dbd9d9;
   border-radius: 8px;
@@ -238,7 +237,7 @@ main {
 .profile-btn {
   display: inline-block;
   margin: 6px 4px 0;
-  padding: 6px 14px;
+  padding: 5px 14px;
   font-size: 14px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
