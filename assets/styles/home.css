@@ -343,11 +343,12 @@ main {
   background: #ffffff;
   border: 1px solid #dbd9d9;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 20px 35px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.04);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px;
+  
 }
 
 
