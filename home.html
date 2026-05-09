@@ -1,25 +1,197 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kolade & Luz">
+    <meta name="description" content="Job finder">
+    <meta name="keywords" content="job, search, finder, professional, home">
+    <link rel="icon" href="./assets/media/favicon.png?v02" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/styles/home.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="./assets/script/script.js" defer></script>
+    <title>ProJob Home Page</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Kolade & Luz">
-  <meta name="description" content="Job finder">
-  <meta name="keywords" content="job, search, finder, professional, home">
-  <link rel="icon" href="./assets/media/favicon.png?v02" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/styles/reset.css" media="all">
-  <link rel="stylesheet" href="./assets/styles/home.css" media="all">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <script src="./assets/script/script.js" defer></script>
-  <title>ProJob Home Page</title>
-</head>
-
-<body>
-
-</body>
-
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-left">
+          <div class="logo">
+            <img class="logo-image" src="./assets/media/projob-logo.png" alt="ProJob logo">
+          </div>
+          <div class="header-search">
+            <input type="search" placeholder="Search">
+          </div>
+        </div>
+        <nav class="main-menu">
+          <button class="menu-btn">Home</button>
+          <button class="menu-btn">Profile</button>
+          <button class="menu-btn">Connections</button>
+          <button class="menu-btn">Interests</button>
+          <button class="menu-btn">Try Premium</button>
+        </nav>
+        <nav class="icons-menu">
+          <button class="header-icon" type="button">
+            <span class="icon">
+              <i class="fa-solid fa-message"></i>
+            </span>
+          </button>
+          <button class="header-icon" type="button">
+            <span class="icon">
+              <i class="fa-solid fa-bell"></i>
+            </span>
+          </button>
+          <button class="header-icon" type="button">
+            <span class="icon">
+              <i class="fa-solid fa-user-plus nav-icon"></i>
+            </span>
+          </button>
+        </nav>
+        <div class="logout-btn">
+           <a href="index.html" id="logout">Logout</a>
+        </div>
+        <div class="profile-photo">
+          <span id="header-photo"></span>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="second-menu">
+          <button class="second-menu-btn" id="post-btn">Posts</button>
+          <button class="second-menu-btn">Background</button>
+          <button class="second-menu-btn">Recommendations</button>
+          <button class="second-menu-btn">Following</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="column" id="left-column">
+        <section class="profile-card">
+          <div class="profile-header">
+            <div class="card-profile-photo">
+              <img id="card-photo" src="./assets/media/peter-sorokin-photo.jpg" alt="Profile photo">
+            </div>
+            <h1 class="profile-name" id="username">Peter Sorokin</h1>
+            <p class="profile-title" id="user-title">Software Developer</p>
+            <p class="profile-location" id="user-location">New York City, USA</p>
+            <button class="profile-btn">Follow</button>
+            <button class="profile-btn">Connect</button>
+          </div>
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <span class="stat-label">Connections</span>
+              <span class="stat-value" id="user-connections">200</span>
+            </div>
+            <div class="profile-stat">
+              <span class="stat-label">Followers</span>
+              <span class="stat-value" id="user-followers">1.9M</span>
+            </div>
+          </div>
+          <div class="profile-links">
+            <a href="#" class="profile-link" id="user-projob">
+              <i class="fa-solid fa-link"></i>
+              projob.com/peter-sorokin
+            </a>
+            <a href="#" class="profile-link" id="user-website">
+              <i class="fa-solid fa-globe"></i>
+              www.peter-sorokin.com
+            </a>
+          </div>
+          <button id="export-btn">
+            <i class="fa-solid fa-file-pdf"></i>
+            Export page as PDF
+          </button>
+        </section>
+      </div>
+      <div class="column" id="central-column">
+        <section class="recent-posts">
+          <h2 class="posts-title">Recent posts</h2>
+          <div class="post-thumbnail">
+            <div class="post">
+              <img src="./assets/media/post-1.jpg" alt="Post thumbnail 1">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">Rethinking AI for a Digital World</h3>
+              <p class="post-date">April 19, 2026</p>
+            </div>
+          </div>
+          <div class="post-thumbnail">
+            <div class="post">
+              <img src="./assets/media/post-2.jpg" alt="Post thumbnail 2">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">How Much Do We Spend on Innovation?</h3>
+              <p class="post-date">April 22, 2026</p>
+            </div>
+          </div>
+          <div class="post-thumbnail">
+            <div class="post">
+              <img src="./assets/media/post-3.jpg" alt="Post thumbnail 3">
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">Employment in the Automation Era</h3>
+              <p class="post-date">May 5, 2026</p>
+            </div>
+          </div>
+        </section>
+        <section class="background-section">
+          <h2 class="background-title">Background</h2>
+          <div class="background-summary">
+            <h3 class="background-title">
+              <i class="fa-solid fa-user"></i>
+              Summary
+            </h3>
+            <p>
+              I'm a software developer and co-founder of Unix Solutions.
+              Over the past decade, my team and I have worked across startups and mid-sized tech teams, building products
+              that balance clean architecture, thoughtful UX, and long-term maintainability.
+              We specialize in full-stack JavaScript, cloud-native systems, and API-driven platforms.
+            </p>
+            <p>
+              I'm passionate about continuous learning, open-source, and using technology to make everyday
+              experiences smoother and more accessible. Outside of work, I'm usually exploring new tools,
+              contributing to community projects, or sketching ideas for my next projects.
+            </p>
+          </div>
+          <div class="experience">
+            <h3 class="experience-title">
+              <i class="fa-solid fa-briefcase"></i>
+              Experience
+            </h3>
+            <ul class="experience-list">
+              <li class="experience-item">
+                <p class="experience-dates">2016 - Present · 10 yrs</p>
+                <h4 class="experience-role">Co-founder, Chairman</h4>
+                <p class="experience-company">Unix Solutions</p>
+                <p class="experience-location">Remote / Global</p>
+              </li>
+              <li class="experience-item">
+                <p class="experience-dates">2012 - 2016 · 4 yrs</p>
+                <h4 class="experience-role">Senior Software Engineer</h4>
+                <p class="experience-company">NovaTech Labs</p>
+                <p class="experience-location">NY, USA</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="column" id="column-right">
+        <section class="random-people">
+          <h2 class="people-title">People you may know</h2>
+          <ul id="people-list"></ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p class="footer-name">ProJob</p>
+        <p class="footer-slogan">Professional growth powered by you.</p>
+        <p class="footer-copy">© 2026 All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
