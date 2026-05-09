@@ -35,3 +35,65 @@ document.addEventListener("DOMContentLoaded", () => {
   loadRandomUsers();
 });
 
+localStorage.setItem('projob_users', JSON.stringify({
+    'kay.luz': 'class2026'
+}));
+
+function handleLogin() {
+
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+    const keep = document.getElementById('keepLoggedIn').checked;
+
+    const stored = JSON.parse(localStorage.getItem('projob_users') || '{}');
+
+    const err = document.getElementById('errorMsg');
+
+    err.classList.remove('show');
+    err.textContent = '';
+
+    if (!stored[username]) {
+
+        err.textContent = 'Username is incorrect';
+        err.classList.add('show');
+
+    } else if (stored[username] !== password) {
+
+        err.textContent = 'Password is incorrect';
+        err.classList.add('show');
+
+    } else {
+
+        localStorage.setItem('projob_session', JSON.stringify({
+            username,
+            loggedIn: true
+        }));
+
+        if (keep) {
+            localStorage.setItem('projob_remember', username);
+        } else {
+            localStorage.removeItem('projob_remember');
+        }
+
+        window.location.href = 'home.html';
+    }
+}
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        handleLogin();
+    }
+});
+
+const remembered = localStorage.getItem('projob_remember');
+
+if (remembered) {
+    document.getElementById('username').value = remembered;
+    document.getElementById('keepLoggedIn').checked = true;
+}
+
+const session = JSON.parse(localStorage.getItem('projob_session') || 'null');
+
+if (session && session.loggedIn) {
+    window.location.href = 'home.html';
+}
