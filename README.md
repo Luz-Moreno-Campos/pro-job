@@ -75,6 +75,6 @@ ProJob consists of two main pages:
 
 ## 🚀 Project Demo
 
-You can view our live ProJob demo here: 
+You can view our live ProJob demo here: https://luz-moreno-campos.github.io/pro-job/
 
 
