@@ -511,11 +511,12 @@ main {
 .person {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
 }
 
 
-.person-avatar {
+.person-image {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -529,7 +530,7 @@ main {
 }
 
 .person-name {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #222;
@@ -554,7 +555,7 @@ main {
 }
 
 .btn-connect i {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 footer {
