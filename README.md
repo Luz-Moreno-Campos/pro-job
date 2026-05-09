@@ -75,6 +75,7 @@ ProJob consists of two main pages:
 
 ## 🚀 Project Demo
 
-You can view our live ProJob demo here: 
+You can view our live ProJob demo here:
 
-
+### Demo credentials
+Username: kay.luz  ·  Password: class2026
