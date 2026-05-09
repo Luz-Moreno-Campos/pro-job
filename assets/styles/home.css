@@ -16,11 +16,12 @@ button {
 
 main {
   max-width: 1200px;
-  margin: 20px;
+  margin: 20px auto;
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 250px 1fr 250px;
-  /* fixed side columns and flexible central-content column */
+  grid-template-columns: 250px minmax(0, 1fr) 250px; /* fixed side columns and flexible central-content column */
   gap: 20px;
+  
 }
 
 .header {
@@ -354,13 +355,12 @@ main {
   grid-column: 1 / -1;  /* this makes the section title span the full width of the 3‑column grid */
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 16px;
   color: #222;
 }
 
 
 .post img {
-  width: 200px;
+  width: 90%;
   height: 140px;
   object-fit: cover;
   border-radius: 8px;
@@ -369,20 +369,18 @@ main {
 
 
 .post-title {
-  width: 200px; 
-  font-size: 15px;
+  width: 160px; 
+  font-size: 13px;
   font-weight: 600;
   color: #222;
   margin-bottom: 4px;
-
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .post-date{
-  font-size: 13px;
+  font-size: 12px;
   color: #777;
 }
 
@@ -479,8 +477,85 @@ main {
 }
 
 
+#column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
+.random-people {
+  background: #ffffff;
+  border: 1px solid #dbd9d9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.people-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+
+#people-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.person-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-name {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.person-location {
+  font-size: 12px;
+  color: #777;
+}
+
+
+.btn-connect {
+  background: #e9f3ff;
+  border: 1px solid #bcd8ff;
+  color: #0a66c2;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-connect i {
+  font-size: 14px;
+}
 
 footer {
   background: #ffffff;
@@ -516,3 +591,4 @@ footer {
   color: #888;
   margin-top: 4px;
 }
+
