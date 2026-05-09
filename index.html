@@ -24,70 +24,68 @@
 <body>
   <main>
     <div class="login-container">
-      <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-    <div class="circle circle-3"></div>
-    <div class="circle circle-4"></div>
-    <div class="login-card">
-      <aside class="panel-left">
-        <img src="./assets/media/LoginImage.png" alt="Secure login illustration" />
-        <div class="img-tagline">Professional Growth Powered by You</div>
-      </aside>
-      <aside class="panel-right">
-        <h1 class="login-title">Login</h1>
-        <p class="login-sub">Please login to continue</p>
-        <div class="form-group">
-          <input type="text" id="username" placeholder="Username" />
-        </div>
-        <div class="form-group">
-          <input type="password" id="password" placeholder="Password" />
-        </div>
-        <div class="form-row">
-          <label class="checkbox-label">
-            <input type="checkbox" id="keepLoggedIn" /> Keep Me Logged In
-          </label>
-          <a href="#" class="forgot-link">Forgot Password?</a>
-        </div>
-        <div class="error-msg" id="errorMsg"></div>
-        <button class="btn-login" onclick="handleLogin()">Login</button>
-        <div class="divider">Or<br>Login With</div>
-        <!-- These SVG Html were copied from chatGPT, I checked online and read that png, svg and jpeg also have html codes -->
-        <div class="social-btns">
-          <button class="social-btn fb" title="Login with Facebook"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24" width="24" height="24" fill="white">
+      <div class="login-card">
+        <aside class="panel-left">
+          <img class="login-logo" src="./assets/media/projob-logo.png" alt="Projob-Logo" />
+          <img src="./assets/media/LoginImage.png" alt="Secure login illustration" />
+          <div class="img-tagline">Professional Growth Powered by You</div>
+        </aside>
+        <aside class="panel-right">
+          <h1 class="login-title">Login</h1>
+          <p class="login-sub">Please login to continue</p>
+          <div class="form-group">
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" placeholder="Password" />
+          </div>
+          <div class="form-row">
+            <label class="checkbox-label">
+              <input type="checkbox" id="keepLoggedIn" /> Keep Me Logged In
+            </label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+          <div class="error-msg" id="errorMsg"></div>
+          <button class="btn-login" onclick="handleLogin()">Login</button>
+          <div class="divider">Or<br>Login With</div>
+          <!-- These SVG Html were copied from chatGPT, I checked online and read that png, svg and jpeg also have html codes -->
+          <div class="social-btns">
+            <button class="social-btn fb" title="Login with Facebook"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="24" height="24" fill="white">
 
-              <path
-                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.883v2.27h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
-            </svg></button>
-          <button class="social-btn tw" title="Login with X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              width="24" height="24" fill="white">
+                <path
+                  d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.883v2.27h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+              </svg></button>
+            <button class="social-btn tw" title="Login with X"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="24" height="24" fill="white">
 
-              <path
-                d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.64 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.404z" />
-            </svg></button>
-          <button class="social-btn gg" title="Login with Google"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 48 48" width="24px" height="24px">
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.64 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.404z" />
+              </svg></button>
+            <button class="social-btn gg" title="Login with Google"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48" width="24px" height="24px">
 
-              <path fill="#EA4335"
-                d="M24 9.5c3.54 0 6.69 1.22 9.18 3.6l6.85-6.85C35.94 2.57 30.37 0 24 0 14.64 0 6.57 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+                <path fill="#EA4335"
+                  d="M24 9.5c3.54 0 6.69 1.22 9.18 3.6l6.85-6.85C35.94 2.57 30.37 0 24 0 14.64 0 6.57 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
 
-              <path fill="#4285F4"
-                d="M46.5 24.5c0-1.64-.15-3.22-.43-4.73H24v9.02h12.7c-.55 2.96-2.21 5.47-4.71 7.16l7.31 5.67C43.99 37.28 46.5 31.41 46.5 24.5z" />
+                <path fill="#4285F4"
+                  d="M46.5 24.5c0-1.64-.15-3.22-.43-4.73H24v9.02h12.7c-.55 2.96-2.21 5.47-4.71 7.16l7.31 5.67C43.99 37.28 46.5 31.41 46.5 24.5z" />
 
-              <path fill="#FBBC05"
-                d="M10.54 28.41A14.5 14.5 0 019.5 24c0-1.53.27-3 .75-4.41l-7.98-6.19A23.93 23.93 0 000 24c0 3.87.93 7.53 2.56 10.78l7.98-6.37z" />
+                <path fill="#FBBC05"
+                  d="M10.54 28.41A14.5 14.5 0 019.5 24c0-1.53.27-3 .75-4.41l-7.98-6.19A23.93 23.93 0 000 24c0 3.87.93 7.53 2.56 10.78l7.98-6.37z" />
 
-              <path fill="#34A853"
-                d="M24 48c6.48 0 11.92-2.13 15.89-5.78l-7.31-5.67c-2.03 1.36-4.62 2.16-8.58 2.16-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.37C6.57 42.62 14.64 48 24 48z" />
-            </svg></button>
-        </div>
-        <div class="demo-creds">
-          <strong>Demo credentials</strong><br>
-          Username: <strong>kay.luz</strong> &nbsp;·&nbsp; Password: <strong>class2026</strong>
-        </div>
-      </aside>
-    </div>
+                <path fill="#34A853"
+                  d="M24 48c6.48 0 11.92-2.13 15.89-5.78l-7.31-5.67c-2.03 1.36-4.62 2.16-8.58 2.16-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.37C6.57 42.62 14.64 48 24 48z" />
+              </svg></button>
+          </div>
+          <div class="demo-creds">
+            <strong>Demo credentials</strong><br>
+            Username: <strong>kay.luz</strong> &nbsp;·&nbsp; Password: <strong>class2026</strong>
+          </div>
+        </aside>
+      </div>
     </div>
   </main>
 </body>
+
 </html>
