@@ -24,6 +24,8 @@ body {
     justify-content: center;
     background: var(--blue-bg);
     position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
 }
 
 .circle {
@@ -84,7 +86,7 @@ body {
     padding: 0;
     position: relative;
     overflow: hidden;
-    min-height: 480px;
+    min-height: 400px;
 }
 
 .panel-left img {
@@ -114,7 +116,7 @@ body {
 
 .panel-right {
     background: white;
-    padding: 52px 44px;
+    padding: 28px 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,4 +239,62 @@ input:focus {
     color: var(--muted);
     margin: 20px 0 16px;
     line-height: 1.7;
+}
+
+.social-btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform 0.15s, filter 0.15s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn:hover {
+    transform: scale(1.10);
+    filter: brightness(1.08);
+}
+
+.social-btn.fb {
+    background: #1877f2;
+}
+
+.social-btn.tw {
+    background: #00101a;
+}
+
+.social-btn.gg {
+    background: white;
+    border: 1.5px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.social-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.demo-creds {
+    margin-top: 22px;
+    padding: 10px 14px;
+    background: #eff6ff;
+    border: 1px dashed #bfdbfe;
+    border-radius: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.demo-creds strong {
+    color: var(--text);
 }

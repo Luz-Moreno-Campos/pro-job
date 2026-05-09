@@ -33,7 +33,7 @@
         <img src="./assets/media/LoginImage.png" alt="Secure login illustration" />
         <div class="img-tagline">Professional Growth Powered by You</div>
       </aside>
-      <aside class="" panel-right>
+      <aside class="panel-right">
         <h1 class="login-title">Login</h1>
         <p class="login-sub">Please login to continue</p>
         <div class="form-group">
@@ -48,7 +48,8 @@
           </label>
           <a href="#" class="forgot-link">Forgot Password?</a>
         </div>
-        <button class="btn-login">Login</button>
+        <div class="error-msg" id="errorMsg"></div>
+        <button class="btn-login" onclick="handleLogin()">Login</button>
         <div class="divider">Or<br>Login With</div>
         <!-- These SVG Html were copied from chatGPT, I checked online and read that png, svg and jpeg also have html codes -->
         <div class="social-btns">
