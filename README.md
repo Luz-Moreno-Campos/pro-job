@@ -77,4 +77,5 @@ ProJob consists of two main pages:
 
 You can view our live ProJob demo here: https://luz-moreno-campos.github.io/pro-job/
 
-
+### Demo credentials
+Username: kay.luz  ·  Password: class2026
