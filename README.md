@@ -69,7 +69,11 @@ ProJob consists of two main pages:
 - **CSS3** — styling  
 - **JavaScript (ES6+)** — login logic, API fetch, DOM rendering  
 - **Random User API** — dynamic user suggestions  
-- **Font Awesome** — icons for navigation and actions  
+- **Font Awesome** — icons for navigation and actions
+
+  ## Screenshots
+  
+  
 
 
 
