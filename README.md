@@ -71,7 +71,9 @@ ProJob consists of two main pages:
 - **Random User API** — dynamic user suggestions  
 - **Font Awesome** — icons for navigation and actions
 
-  ## Screenshots
+  ## Application Screenshot
+
+![Application Screenshot](assets/media/ScreenshotProJob.png)
   
   
 
